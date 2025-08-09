@@ -95,8 +95,9 @@ Change the argo-cd  service type to LoadBalancer
 Create an ingress resource that point into argocd-service services
 
 ### Port forwarding
+```bash
 Kubectl port-forward svc/argo-server 0b argocd 8080:443
-
+```
 ## Argocd CLI installation process to login
 ```bash
 VERSION=$(curl -s https://api.github.com/repos/argoproj/argo-cd/releases/latest | grep tag_name | cut -d '"' -f 4)
