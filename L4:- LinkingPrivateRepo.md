@@ -22,3 +22,11 @@ stringData:
 ```
 
 ## SSH Key
+There are two methods to deal with adding the keys using manifest and second is using command line
+- Step 1 generate private and public ssh keys
+
+### Method 2
+```bash 
+argocd repo add git@github.com:anandvamsi/ArgoCD.git --ssh-private-key-path ./argo --name argorepo
+Repository 'git@github.com:anandvamsi/ArgoCD.git' added
+```
